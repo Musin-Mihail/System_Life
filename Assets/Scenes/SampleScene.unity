@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 225088978}
   - component: {fileID: 225088977}
   - component: {fileID: 225088976}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,6 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Citizen: {fileID: 648210767}
   Plant: {fileID: 4848789410904555647, guid: 7993d7dd181141746b2fc55e3fb0b3d1, type: 3}
+  Test: {fileID: 2722147271998511025, guid: c6639a89881c3d6478976b9f6126763c, type: 3}
   Wait: 0
 --- !u!65 &225088977
 BoxCollider:
@@ -629,13 +630,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.21625365, y: -0, z: -0, w: 0.97633725}
+  m_LocalPosition: {x: 0, y: 63, z: -97.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 24.978, y: 0, z: 0}
 --- !u!1 &1999793985
 GameObject:
   m_ObjectHideFlags: 0

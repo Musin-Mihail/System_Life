@@ -20,13 +20,12 @@ public class Citizen : MonoBehaviour
         if(Stop == 0)
         {
             transform.LookAt(target);
-            Body.AddRelativeForce(Vector3.forward*100);
+            Body.AddRelativeForce(Vector3.forward*200);
         }
             
     }
     void OnTriggerEnter (Collider other)
     {
-        Debug.Log(target);
         if(other.name == "PlantWait")
         {
             other.name = "Plant";
