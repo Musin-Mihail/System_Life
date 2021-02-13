@@ -10,12 +10,13 @@ public class House : MonoBehaviour
     int layerMask1 = 1 << 6;// Plant
     int layerMask2 = 1 << 7; //House
     int layerMask3;
-    Vector3 target;
+    public Vector3 target;
     public int Wait = 0;
     public List<GameObject> AllPlant;
     public List<GameObject> PlantedPlants;
     void Start()
     {
+        Plants = Global.AllPlants2;
         AllPlant = new List<GameObject>();
         PlantedPlants = new List<GameObject>();
         layerMask3 = layerMask1 | layerMask2;
@@ -31,7 +32,7 @@ public class House : MonoBehaviour
                 if(hitColliders.Length < 20)
                 {
                     target = Random.insideUnitCircle * 50;
-                    var NewTarget = new Vector3(target.x, 2, target.y);
+                    var NewTarget = new Vector3(target.x + transform.position.x, 2, target.y + transform.position.z);
                     var hitColliders2 = Physics.OverlapSphere(NewTarget, 5, layerMask3);
                     if(hitColliders2.Length  == 0)
                     {
